@@ -1,0 +1,131 @@
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: rgb(22,25,34);
+  background: radial-gradient(circle, rgba(71, 71, 71, 0.65) 0%, rgba(22,25,34,1) 100%);
+  background-attachment: fixed;
+  min-width: 320px;
+  min-height: 100vh;
+  font-weight: 300;
+  font-family: monospace;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;    
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.name{
+  font-size: 64px;
+  font-weight: 300;
+  text-align: center;
+}
+.container-flex{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.occ{
+  font-weight: 300;
+  animation: glitch 1.4s infinite linear alternate-reverse;
+  text-shadow: -1px -1px 0 #00f, 1px 1px 0 #f00;
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(-1px, -1px);
+  }
+  80% {
+    transform: translate(1px, 1px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.pl-container{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  margin-top: -35px;
+}
+.sl-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.avatar{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.cursor {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: #fff;
+  animation: cursor-blink 1s infinite;
+}
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.terminal{
+  font-size: 16.5px;
+}
+.hr{
+  border: 3px solid;
+  opacity: 0.65;
+  max-height: 150px;
+}
+.skill-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.skills, .soc {
+  transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.skills:hover, .soc:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.skill-text{
+  display: none;
+}
+.skills:hover .skill-text{
+  display: block;
+}
