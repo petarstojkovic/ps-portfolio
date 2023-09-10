@@ -81,8 +81,8 @@ body {
   flex-direction: row;
 }
 .avatar{
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
 }
