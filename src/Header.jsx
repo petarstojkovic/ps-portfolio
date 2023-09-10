@@ -5,8 +5,7 @@ const Header = () => {
 
     return <>
     <div className="container">
-      <img src="../imgs/avatar.jpg" alt="avatar" className="avatar img-fluid img-thumbnail mx-auto d-block" />
-      <h1 className="display-1 text-light name">Petar Stojkovic</h1>
+      <h1 className="display-1 text-light name">Petar Stojković</h1>
         <div className="row">
       <div className="container-flex">
       <h5 className="text-warning occ">Frontend Developer</h5>

@@ -4,7 +4,7 @@ import { skillInfo } from "./data"
 
 const Skills = () => {
   return <section id="about&skills">
-    <h1 className="display-5 mt-5 mb-5 text-light d-flex justify-content-center">My Skill Collection</h1>
+    <h1 className="display-5 mb-5 text-light d-flex justify-content-center">My Skill Collection</h1>
     <div className="skill-container">
         {skillInfo.map((info)=>{
             return <div className="skills mx-3" key={info.id} {...info}>
