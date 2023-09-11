@@ -14,33 +14,26 @@
 
 body {
   margin: 0;
+  padding: 0;
   background: rgb(22,25,34);
   background: radial-gradient(circle, rgba(71, 71, 71, 0.65) 0%, rgba(22,25,34,1) 100%);
   background-attachment: fixed;
-  min-width: 320px;
+  min-width: 20em;
   min-height: 100vh;
   font-weight: 300;
   font-family: monospace;
+  overflow-x: hidden;
 }
 .container{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 320px;
+  min-width: 20em;
   width: 100%;
   min-height: 100vh;    
   flex-direction: column;
   flex-wrap: wrap;
-}
-.name{
-  font-size: 64px;
-  font-weight: 300;
-  text-align: center;
-}
-.container-flex{
-  display: flex;
-  justify-content: end;
-  width: 100%;
+  padding: 0;
 }
 .occ{
   font-weight: 300;
@@ -66,13 +59,6 @@ body {
   100% {
     transform: translate(0);
   }
-}
-.pl-container{
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  width: 100%;
-  margin-top: -35px;
 }
 .sl-container{
   display: flex;
@@ -110,10 +96,24 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
-.skills, .soc {
+.skills:hover {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-3px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(3px);
+  }
+}
+.soc {
   transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.skills:hover, .soc:hover {
+.soc:hover {
   transform: scale(1.2);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
