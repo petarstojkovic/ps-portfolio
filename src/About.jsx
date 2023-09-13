@@ -2,7 +2,7 @@ import { aboutInfo } from "./data"
 
 const About = () => {
     return (
-        <section>
+        <section id="about">
             {aboutInfo.map((info)=>{
                 return <div className="container-fluid mt-5" key={info.id}>
                 <div>

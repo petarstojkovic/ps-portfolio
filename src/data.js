@@ -2,11 +2,15 @@
 import { faBootstrap, faCss3, faGit, faGithub, faGoogle, faHtml5, faJs, faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons"
 export const pageLinks = [{
     id: 1,
-    href: "#about&skills",
-    text: "About & Skills"
+    href: "#skills",
+    text: "My Skills"
 },
 {
     id: 2,
+    href: "#about",
+    text: "About Me"
+},{
+    id: 3,
     href: "#contact",
     text: "Contact"
 }]

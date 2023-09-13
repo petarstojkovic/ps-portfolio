@@ -37,8 +37,19 @@ body {
 }
 .occ{
   font-weight: 300;
-  animation: glitch 1.4s infinite linear alternate-reverse;
-  text-shadow: -1px -1px 0 #00f, 1px 1px 0 #f00;
+  animation: glitch 0.6s infinite linear alternate-reverse;
+  text-shadow: -3px -3px 0 #00f, 4px 4px 0 #f00;
+}
+.pl{
+  display: flex;
+}
+.pl-l{
+  font-size: 1.5em;
+  transition: transform 0.2s ease-in-out;
+}
+.pl-l:hover{
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
 }
 @keyframes glitch {
   0% {
