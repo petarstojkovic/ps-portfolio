@@ -4,19 +4,22 @@ import { pageLinks } from "./data"
 const Header = () => {
 
     return <>
-    <div className="container">
+    <div className="header">
       <h1 className="display-1 text-light">Petar Stojković</h1>
       <div className="occ">
       <h5 className="text-warning">Frontend Developer</h5>
       </div>
-      <div className="pl">
+    </div>
+      <nav className="nav-bar">
         {pageLinks.map((pageLink)=>{
-            return <div className="pl-l lead mx-3 pt-1" key={pageLink.id} {...pageLink}>
-            <a className="nav-link text-success" href={pageLink.href}> {pageLink.text} </a>
+            return <div className="nav lead" key={pageLink.id} {...pageLink}>
+            <div className="nav-item">
+                <a className="nav-link text-success" href={pageLink.href}> {pageLink.text} </a>
+            </div>
+                
         </div>
         })}
-    </div>
-        </div>
+    </nav>
         </>
 }
 export default Header

@@ -23,7 +23,7 @@ useEffect(() => {
     <div className="container">
       {loading ? <Loading /> : showContent ? (
         <div>
-{loading ? <Loading /> : <><Header /><Skills /><About /><Footer /></>}
+{loading ? <Loading /> : <><div className="content"><Header /><Skills /><About /><Footer /></div></>}
         </div>
       ) : (
         <>

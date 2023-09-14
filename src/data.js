@@ -1,5 +1,5 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBootstrap, faCss3, faGit, faGithub, faGoogle, faHtml5, faJs, faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons"
+import { faBootstrap, faCss3, faGit, faGithub, faGoogle, faHtml5, faJs, faLinkedin, faNode, faReact } from "@fortawesome/free-brands-svg-icons"
 export const pageLinks = [{
     id: 1,
     href: "#skills",
@@ -88,4 +88,7 @@ export const skillInfo = [{
 },{
     id: 7,
     img: faGithub
+},{
+    id: 8,
+    img: faNode
 }]
